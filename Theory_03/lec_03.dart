@@ -30,4 +30,7 @@ void main(){
   print(list5.hashCode);
   print(list5.length);
   print(list5.reversed);
+
+  Set<int> numbers={23,53,603};
+  print(numbers);
 }
