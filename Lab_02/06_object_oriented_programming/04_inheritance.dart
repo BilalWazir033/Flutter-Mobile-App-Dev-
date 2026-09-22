@@ -27,10 +27,10 @@ void main() {
 
   Student std1 = Student();
 
-  std1.personName = 'Moeen';
+  std1.personName = 'Hazrat Bilal';
   std1.personAge = '20';
   std1.studentAddress = 'Peshawar';
-  std1.studentRollNo = '22PWBCS0905';
+  std1.studentRollNo = '24pwbcs1345';
 
   std1.displayPersonData();
   std1.displayStudent1Data();
