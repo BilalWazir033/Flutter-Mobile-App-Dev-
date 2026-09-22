@@ -235,5 +235,4 @@ Function: Used for calculating percentage, grade, total, average, highest and lo
 Condition: Used with if-else for grade and Pass/Fail.
 Loop: Used with for-in to process marks.
 */
-git add .
-git commit -m ""
+
