@@ -33,4 +33,12 @@ void main(){
 
   Set<int> numbers={23,53,603};
   print(numbers);
+
+  Map<String, int> marks={
+    "Ali":90,
+    "Waheed":20,
+    "Naseem":34
+  };
+   print(marks);
 }
+
