@@ -22,6 +22,6 @@ void main() {
   dog.bark();
 }
 
-// git add .
-// git commit -m "interface implementation, single and multiple inheritance"
-// git push origin main
+git add .
+git commit -m "Added mixin example with Animal and Bird behaviors to Dog class"
+git push origin main
