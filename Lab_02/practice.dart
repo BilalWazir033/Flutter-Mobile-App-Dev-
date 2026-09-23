@@ -1,31 +1,58 @@
-/*
-Polymorphism lets code use a common parent type while the run-time object provides its own overridden behavior.
-*/
-
-class Parent {
-  void method() {
-    print('This is parent class method');
-  }
+// abstract class
+abstract class vehicle{
+  void start();
+  void stop();
 }
-
-class Child extends Parent {
+class car1 extends vehicle{
+  @ override
+  void start(){
+    print("Car is started");
+  }
   @override
-  void method() {
-    print('This is child class method');
+  void stop(){
+    print("Car is stopped");
   }
 }
 
-void main() {
-  Child ch = Child();
-  // We know that a child class inherits the methods and properties of the parent class. However, in method overriding, the parent class method is not called.
-  ch.method();
+abstract class sample{
+  String? SampleName;
+  double? price;
 
-  Parent pa = Parent();
-  pa.method();
+  sample(String spn, double pr){
+    this.SampleName=spn;
+    this.price=pr;
+  }
+  void method();
 }
 
+class SubSample extends sample{
+  String? sampleid;
 
+  SubSample(String spn, double pr, String spid):super(spn, pr){
+    this.sampleid=spid;
+  }
+  @override
+  void method(){
+    print("Subsample method inheriated from sample");
+  }
+
+}
+
+void main(){
+  SubSample sb=SubSample("Cell Nucleus", 234.53, "234.5493std");
+  sb.method();
+  print("Sample Name: ${sb.SampleName}");
+  print("Sample Price: ${sb.price}");
+  print("Sample ID: ${sb.sampleid}");
+
+
+
+
+  car1 c1=car1();
+  c1.start();
+  c1.stop();
+}
 
 git add .
-git commit -m "Added polymorphism example with parent and child classes"
+git commit -m "Added abstract class and its implementation"
 git push origin main
