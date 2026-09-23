@@ -1,44 +1,27 @@
-abstract class PersonInfo{
-  String? Name;
-
-  void genderIs();
-}
-abstract class PersonDetails{
-  String? Address;
-
-  void nationalityIs();
-}
-
-class person implements PersonInfo, PersonDetails{
-
-  @override
-  String? Name;
-  @override
-  String? Address;
-
-  @override
-  void genderIs(){
-    print("Gender is Male");
+mixin Animal {
+  void eat() {
+    print("Animal is eating");
   }
-
-  @override
-  void nationalityIs(){
-    print("Nationality is Pakistani");
+}
+mixin Bird {
+  void fly() {
+    print("Bird is flying");
   }
 }
 
-void main(){
-  person p1=person();
-  p1.Name="Bilal";
-  p1.Address="Waziristan";
-  print("Name: ${p1.Name}");
-  print("Address: ${p1.Address}");
-  p1.genderIs();
-  p1.nationalityIs();
+class Dog with Animal , Bird{
+  void bark() {
+    print("Dog is barking");
+  }
 
 }
+void main() {
+  Dog dog = Dog();
+  dog.eat();
+  dog.fly();
+  dog.bark();
+}
 
-
-git add .
-git commit -m "interface implementation, single and multiple inheritance"
-git push origin main
+// git add .
+// git commit -m "interface implementation, single and multiple inheritance"
+// git push origin main
