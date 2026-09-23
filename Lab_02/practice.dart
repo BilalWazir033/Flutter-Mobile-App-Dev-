@@ -1,27 +1,31 @@
-// Inheritance constructor
-class parent {
-  String? name;
-    int? age;
-  parent(String n, int a) {
-      this.name = n;
-      this.age = a;  
-      print('Name: ${this.name}');
-      print('Age: ${this.age}');
+/*
+Polymorphism lets code use a common parent type while the run-time object provides its own overridden behavior.
+*/
+
+class Parent {
+  void method() {
+    print('This is parent class method');
   }
 }
-class child extends parent {
-  String? RollNo;
-  child(String n, int a, String r) : super(n, a) {
-    this.RollNo = r;
-      print('RollNo: ${this.RollNo}');
-    
+
+class Child extends Parent {
+  @override
+  void method() {
+    print('This is child class method');
   }
 }
 
 void main() {
-  child c = child('Ali', 20, 'as23');
+  Child ch = Child();
+  // We know that a child class inherits the methods and properties of the parent class. However, in method overriding, the parent class method is not called.
+  ch.method();
+
+  Parent pa = Parent();
+  pa.method();
 }
 
-// git add .
-// git commit -m "Added inheritance constructor example"
-// git push origin main
+
+
+git add .
+git commit -m "Added polymorphism example with parent and child classes"
+git push origin main
