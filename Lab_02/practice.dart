@@ -1,58 +1,44 @@
-// abstract class
-abstract class vehicle{
-  void start();
-  void stop();
+abstract class PersonInfo{
+  String? Name;
+
+  void genderIs();
 }
-class car1 extends vehicle{
-  @ override
-  void start(){
-    print("Car is started");
-  }
+abstract class PersonDetails{
+  String? Address;
+
+  void nationalityIs();
+}
+
+class person implements PersonInfo, PersonDetails{
+
   @override
-  void stop(){
-    print("Car is stopped");
-  }
-}
-
-abstract class sample{
-  String? SampleName;
-  double? price;
-
-  sample(String spn, double pr){
-    this.SampleName=spn;
-    this.price=pr;
-  }
-  void method();
-}
-
-class SubSample extends sample{
-  String? sampleid;
-
-  SubSample(String spn, double pr, String spid):super(spn, pr){
-    this.sampleid=spid;
-  }
+  String? Name;
   @override
-  void method(){
-    print("Subsample method inheriated from sample");
+  String? Address;
+
+  @override
+  void genderIs(){
+    print("Gender is Male");
   }
 
+  @override
+  void nationalityIs(){
+    print("Nationality is Pakistani");
+  }
 }
 
 void main(){
-  SubSample sb=SubSample("Cell Nucleus", 234.53, "234.5493std");
-  sb.method();
-  print("Sample Name: ${sb.SampleName}");
-  print("Sample Price: ${sb.price}");
-  print("Sample ID: ${sb.sampleid}");
+  person p1=person();
+  p1.Name="Bilal";
+  p1.Address="Waziristan";
+  print("Name: ${p1.Name}");
+  print("Address: ${p1.Address}");
+  p1.genderIs();
+  p1.nationalityIs();
 
-
-
-
-  car1 c1=car1();
-  c1.start();
-  c1.stop();
 }
 
+
 git add .
-git commit -m "Added abstract class and its implementation"
+git commit -m "interface implementation, single and multiple inheritance"
 git push origin main
