@@ -17,6 +17,3 @@ void main() {
     print('Parsing attempt finished.');
   }
 }
-git add .
-git commit -m "Add exception handling example for parsing integers"
-git push origin main
