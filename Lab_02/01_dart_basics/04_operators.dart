@@ -220,14 +220,14 @@ void main() {
   //of one collection inside another collection.
 
   // without spread operator:
-  var list6 = [5];
+  // var list6 = [5];
 
-  list6.addAll(list7);
+  // list6.addAll(list7);
 
-  list6.add(40);
+  // list6.add(40);
 
   // with spread operator:
-  var list8 = [5, ...list9, 40];
+  // var list8 = [5, ...list9, 40];
 
 }
 

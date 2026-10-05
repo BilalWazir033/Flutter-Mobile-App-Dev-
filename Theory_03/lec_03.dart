@@ -39,6 +39,5 @@ void main(){
     "Waheed":20,
     "Naseem":34
   };
-   print(marks);
+  print(marks);
 }
-
