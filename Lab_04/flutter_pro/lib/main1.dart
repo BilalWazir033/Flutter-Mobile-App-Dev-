@@ -245,4 +245,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
+git add .
+git commit -m "Initial commit of the Flutter app with counter functionality"
+git push origin main
