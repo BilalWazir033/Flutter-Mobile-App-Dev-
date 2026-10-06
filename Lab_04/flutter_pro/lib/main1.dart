@@ -246,5 +246,5 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 git add .
-git commit -m "Initial commit of the Flutter app with counter functionality"
+git commit -m "added a reset button to the counter app with icon and changed the color of the buttons to red and green"
 git push origin main
