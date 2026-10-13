@@ -411,6 +411,4 @@ class CourseTile extends StatelessWidget {
     );
   }
 }
-git add .
-git commit -m "Completed the ProfileDashboard widget with reusable components for student profile, summary cards, about section, and course tiles."
-git push origin main
+ll
