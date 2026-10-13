@@ -124,7 +124,6 @@ import 'package:flutter/material.dart';
 // }
 
 
-import 'package:flutter/material.dart';
 
 
 
@@ -245,6 +244,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-git add .
-git commit -m "Added a new Flutter app with a counter and reset functionality"  
-git push origin main
+
