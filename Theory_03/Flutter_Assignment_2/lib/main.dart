@@ -61,5 +61,5 @@ class StudentApp extends StatelessWidget {
 }
 
 git add .
-git commit -m "Implemented student result display using enum and function."
+git commit -m "flutter app to show student result using enum and switch case by using flutter"
 git push origin main
