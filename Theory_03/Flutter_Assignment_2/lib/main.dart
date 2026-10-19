@@ -59,3 +59,7 @@ class StudentApp extends StatelessWidget {
     );
   }
 }
+
+git add .
+git commit -m "Implemented student result display using enum and function."
+git push origin main
