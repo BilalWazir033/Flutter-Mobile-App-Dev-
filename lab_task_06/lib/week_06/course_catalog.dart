@@ -671,9 +671,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
     Navigator.pop(context, result);
   }
-  git add .
-  git commit -m "Implement course catalog and registration screens with responsive design and form validation"
-  git push origin main
 
   @override
   Widget build(BuildContext context) {
