@@ -776,3 +776,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
   }
 }
+
+git add .
+git commit -m "Added course catalog and registration functionality"
+git push origin main
