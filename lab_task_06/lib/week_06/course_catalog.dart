@@ -582,9 +582,6 @@ class DetailRow extends StatelessWidget {
     required this.label,
     required this.value,
   });
-git add .
-git commit -m "course registeration null error correction"
-git push origin main
   @override
   Widget build(BuildContext context) {
     return Row(
