@@ -1,0 +1,32 @@
+
+Lab Task 08: Flutter State Management
+Course: CS-314
+Semester: 5th Semester
+Instructor: Moeen Ahmad
+
+1. Why is setState() enough for this screen?
+
+setState() is enough because the counter and switch
+values are only used on one screen. It updates the
+UI whenever these values change. We do not need
+an additional state management package.
+
+2. One realistic situation where Provider is useful:
+
+Provider is useful in a task management application.
+For example, the task list screen and dashboard screen
+may both need the same task count. Provider allows
+both screens to access and update shared data without
+passing values through many constructors.
+
+3. Comparison between setState() and Provider:
+
+setState():
+- Used for local screen state.
+- Simple and easy to understand.
+- Suitable for small applications and individual screens.
+
+Provider:
+- Used for sharing state between multiple widgets.
+- Uses ChangeNotifier and notifyListeners().
+- Suitable when several widgets or screens need the same data.
