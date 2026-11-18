@@ -255,3 +255,6 @@ class _PostsScreenState extends State<PostsScreen> {
     );
   }
 }
+git add .
+git commit -m "Add Post model and REST API integration"
+git push origin main
